@@ -1,13 +1,16 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 
 <dom-module id="my-element">
   <template>
+    <iron-icon icon="communication:business"></iron-icon>
     <h1>Hello, World! It's [[today]].</h1>
   </template>
   <script>
     // Heyyyy, we're pulling in a Node module!
     import format from 'date-fns/format';
-    
+
     class MyElement extends Polymer.Element {
       static get is() { return 'my-element'; }
       static get properties() {
